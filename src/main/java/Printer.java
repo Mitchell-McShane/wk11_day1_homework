@@ -17,10 +17,9 @@ public class Printer {
     }
 
     public void print(int copies, int pages){
-        int totalPages = copies * pages;
-        if (totalPages < pages){
-            this.pages -= totalPages;
-            this.toner -= totalPages;
+        if((pages * copies) <= this.pages){
+            this.pages = this.pages - (pages * copies);
+            this.toner = this.toner - (pages * copies);
         }
     }
 }

@@ -19,8 +19,8 @@ public class PrinterTest {
 
     @Test
     public void hasEnoughPages(){
-        printer.print(20,100);
-        assertEquals(60, printer.getPages());
+        printer.print(6,7);
+        assertEquals(18, printer.getPages());
     }
 
     @Test
