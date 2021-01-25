@@ -20,6 +20,7 @@ public class Printer {
         int totalPages = copies * pages;
         if (totalPages < pages){
             this.pages -= totalPages;
+            this.toner -= totalPages;
         }
     }
 }
