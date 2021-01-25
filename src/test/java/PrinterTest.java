@@ -21,7 +21,12 @@ public class PrinterTest {
     public void hasEnoughPages(){
         printer.print(20,100);
         assertEquals(100, printer.getPages());
+    }
 
+    @Test
+    public void notEnoughPages(){
+        printer.print(15, 10);
+        assertEquals(100, printer.getPages());
     }
 
     @Test
