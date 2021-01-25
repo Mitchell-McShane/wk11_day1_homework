@@ -10,4 +10,9 @@ public class CalculatorTest {
     public void canAdd(){
       assertEquals(8, calculator.add(4,4));
   }
+
+  @Test
+    public void canSubtract(){
+      assertEquals(10, calculator.subtract(15, 5));
+  }
 }
