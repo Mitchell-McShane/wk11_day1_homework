@@ -18,6 +18,13 @@ public class PrinterTest {
     }
 
     @Test
+    public void hasEnoughPages(){
+        printer.print(20,100);
+        assertEquals(100, printer.getPages());
+
+    }
+
+    @Test
     public void hasToner(){
         assertEquals(200, printer.getToner());
     }

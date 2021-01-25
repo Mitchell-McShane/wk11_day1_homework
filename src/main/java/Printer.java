@@ -15,4 +15,11 @@ public class Printer {
     public int getToner(){
         return this.toner;
     }
+
+    public void print(int copies, int pages){
+        int totalPages = copies * pages;
+        if (totalPages < pages){
+            this.pages -= totalPages;
+        }
+    }
 }
