@@ -27,4 +27,9 @@ public class WaterBottleTest {
         assertEquals(0, waterBottle.empty());
     }
 
+    @Test
+    public void isFull(){
+        assertEquals(100, waterBottle.fill());
+    }
+
 }
